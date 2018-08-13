@@ -1,0 +1,612 @@
+z024266@INLH103204 MINGW64 ~
+$ mkdir Nissan_Training
+
+z024266@INLH103204 MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ eclipse/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NetHood@
+ Nissan_Training/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-m
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-m
+ ntuser.ini
+ ntuser.pol
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+c
+z024266@INLH103204 MINGW64 ~
+$ cd Nissan_Training/
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git config --global user.name "yamoksh"
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git config --global user.email yamoksh@gmail.com
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Users/z024266/AppData/Local/Programs/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+user.name=yamoksh
+user.email=yamoksh@gmail.com
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git config --global user.email yamokshverma@gmail.com
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Users/z024266/AppData/Local/Programs/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+user.name=yamoksh
+user.email=yamokshverma@gmail.com
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ pwd
+/c/Users/z024266/Nissan_Training
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ mkdir FirstRepo
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ cd FirstRepo/
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo
+$ pwd
+/c/Users/z024266/Nissan_Training/FirstRepo
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo
+$ git init
+Initialized empty Git repository in C:/Users/z024266/Nissan_Training/FirstRepo/.git/
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ pwd
+/c/Users/z024266/Nissan_Training/FirstRepo
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ ^C
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ touch n1.txt
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ touch n2.txt
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        n1.txt
+        n2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ git add .
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   n1.txt
+        new file:   n2.txt
+
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ git -am
+unknown option: -am
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ git commit -am "Bug fix for something"
+[master (root-commit) d788046] Bug fix for something
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 n1.txt
+ create mode 100644 n2.txt
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ git log
+commit d788046ccf929bf62563ed590de7faac6f3baa40 (HEAD -> master)
+Author: yamoksh <yamokshverma@gmail.com>
+Date:   Mon Aug 13 15:41:00 2018 +0530
+
+    Bug fix for something
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$?git remote add origin https://github.com/Yamoksh/FirstRepo.git
+bash: $'\302\226git': command not found
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$git remote add origin https://github.com/Yamoksh/FirstRepo.git
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ git push -u origin master
+
+fatal: TaskCanceledException encountered.
+   A task was canceled.
+Username for 'https://github.com': remote: Anonymous access to Yamoksh/FirstRepo.git denied.
+fatal: Authentication failed for 'https://github.com/Yamoksh/FirstRepo.git/'
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': yamoksh
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Yamoksh/FirstRepo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ ^C
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ ssh-keygen -t rsa -C yamokshverma@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/z024266/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:       .pub.
+The key fingerprint is:n saved in  in
+SHA256:CUB8e7fJOfj3CgMLvuyxb72NSHdw62YoZoutBWHN3ak yamokshverma@gmail.com
+The key's randomart image is:
++---[RSA 2048]----+
+|   oo            |
+|    ...o . . .   |
+|     .+.o . o    |
+|     ..o....     |
+|      o.S+E+.    |
+|     . o.o*o .   |
+|      o +o+oo    |
+|     . O=o+B+    |
+|     .B*=oo=+o.  |
++----[SHA256]-----+
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ ssh-keygen -t rsa -C yamokshverma@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/z024266/.ssh/id_rsa):
+Created directory '/c/Users/z024266/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/z024266/.ssh/id_rsa.
+Your public key has been saved in /c/Users/z024266/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:6tAnpWmb1LC+r5j76os5Yj3GWvRN4E4w6Wl26KezUpk yamokshverma@gmail.com
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|    .            |
+|   + .           |
+|  . * .          |
+|   Bo+..S        |
+|  =E=.oO         |
+|  +o.+X.o        |
+|.ooOoO =         |
+|.o*=@=O+.        |
++----[SHA256]-----+
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ cd D:\Public\github
+bash: cd: D:Publicgithub: No such file or directory
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ cd ./../
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ cd ./../
+
+z024266@INLH103204 MINGW64 ~
+$ ssh-keygen -t rsa -C yamokshverma@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/z024266/.ssh/id_rsa):
+/c/Users/z024266/.ssh/id_rsa already exists.
+Overwrite (y/n)? yamoksh
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/z024266/.ssh/id_rsa.
+Your public key has been saved in /c/Users/z024266/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:oFwwEQhmG9ea3c/CgkivQG1BglhWFLQftwqWrV6Hgic yamokshverma@gmail.com
+The key's randomart image is:
++---[RSA 2048]----+
+|+B+B@+           |
+|=.*. =           |
+| .. * = .        |
+| o * B = .       |
+|o + B + S        |
+|.. = + = o       |
+|. E + = o        |
+| . + o .         |
+|    .            |
++----[SHA256]-----+
+
+z024266@INLH103204 MINGW64 ~
+$ ssh -T git
+
+
+
+z024266@INLH103204 MINGW64 ~
+$
+
+
+z024266@INLH103204 MINGW64 ~
+$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.253.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+Enter passphrase for key '/c/Users/z024266/.ssh/id_rsa':
+Hi Yamoksh! You've successfully authenticated, but GitHub does not provide shell access.
+
+z024266@INLH103204 MINGW64 ~
+$ cd N
+NetHood/
+Nissan_Training/
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+ntuser.ini
+ntuser.pol
+
+z024266@INLH103204 MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ eclipse/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NetHood@
+ Nissan_Training/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ ntuser.pol
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+
+z024266@INLH103204 MINGW64 ~
+$ cd Nissan_Training/
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ cd FirstRepo/
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/FirstRepo (master)
+$ cd ..
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone SecondRepo
+fatal: repository 'SecondRepo' does not exist
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone ?https://github.com/Yamoksh/SecondRepo
+Cloning into 'SecondRepo'...
+fatal: I don't handle protocol '?https'
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone ?https://github.com/Yamoksh/SecondRepo ssh
+Cloning into 'ssh'...
+fatal: I don't handle protocol '?https'
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone ??git@github.com:Yamoksh/SecondRepo.git
+Cloning into 'SecondRepo'...
+Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+\302\226\302\226git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ ls
+FirstRepo/
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone ??git@github.com:Yamoksh/SecondRepo.git
+Cloning into 'SecondRepo'...
+\302\226\302\226git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ cd .
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ cd ./../
+
+z024266@INLH103204 MINGW64 ~
+$ git clone ??git@github.com:Yamoksh/SecondRepo.git
+Cloning into 'SecondRepo'...
+\302\226\302\226git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+z024266@INLH103204 MINGW64 ~
+$ cd
+
+z024266@INLH103204 MINGW64 ~
+$ git clone ??git@github.com:Yamoksh/SecondRepo.git
+Cloning into 'SecondRepo'...
+\302\226\302\226git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+z024266@INLH103204 MINGW64 ~
+$ cd Nissan_Training
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ ^C
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$  ssh-keygen -t rsa -C yamokshverma@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/z024266/.ssh/id_rsa):
+/c/Users/z024266/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/z024266/.ssh/id_rsa.
+Your public key has been saved in /c/Users/z024266/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:JcbteyL58UjaOSjjgkwANi3TIfumD8zenSKALxqsUQE yamokshverma@gmail.com
+The key's randomart image is:
++---[RSA 2048]----+
+|E.o..            |
+|.*oo   . .       |
+|o.=     + o      |
+|. ..   . +       |
+|...o    S .      |
+|*.+      . .     |
+|+X .    o.= .    |
+|++B.o + .*.B     |
+|+o.o.=.o. =..    |
++----[SHA256]-----+
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ ^C
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone ??git@github.com:Yamoksh/SecondRepo.git
+Cloning into 'SecondRepo'...
+\302\226\302\226git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone git@github.com:Yamoksh/SecondRepo.git
+Cloning into 'SecondRepo'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone git@github.com:Yamoksh/SecondRepo.git^C
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ ls
+FirstRepo/
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone git@github.com:Yamoksh/SecondRepo.git
+Cloning into 'SecondRepo'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$  ssh-keygen -t rsa -C yamokshverma@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/z024266/.ssh/id_rsa):
+/c/Users/z024266/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/z024266/.ssh/id_rsa.
+Your public key has been saved in /c/Users/z024266/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:c6eG0hI8qG13lfNX2KYi1D9KPbKdy30n4mzJ9crOAHE yamokshverma@gmail.com
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|                 |
+|          . E    |
+|     o     =   o |
+|    . + S B o . +|
+|   o   + * * o.+ |
+|  . o + + +.*oB. |
+|   . . + . +=%.=+|
+|           o=oX++|
++----[SHA256]-----+
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+Enter passphrase for key '/c/Users/z024266/.ssh/id_rsa':
+Hi Yamoksh! You've successfully authenticated, but GitHub does not provide shell access.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ git clone git@github.com:Yamoksh/SecondRepo.git
+Cloning into 'SecondRepo'...
+Enter passphrase for key '/c/Users/z024266/.ssh/id_rsa':
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ ls
+FirstRepo/  SecondRepo/
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training
+$ cd SecondRepo/
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$ touh yam.txt
+bash: touh: command not found
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$ tocuh yam.txt
+bash: tocuh: command not found
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$ touch yam.txt
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$ git add yam.txt
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$ git commit -m yam.txt
+[master 8006c77] yam.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 yam.txt
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$ git push yam.txt
+fatal: invalid gitfile format: yam.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$ git commit -am "Updated yam.txt"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$ git commit -am "Updated yam.txt"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+Enter passphrase for key '/c/Users/z024266/.ssh/id_rsa':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 269 bytes | 134.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:Yamoksh/SecondRepo.git
+   e7847c1..8006c77  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+z024266@INLH103204 MINGW64 ~/Nissan_Training/SecondRepo (master)
+$
